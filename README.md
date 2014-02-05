@@ -2,6 +2,13 @@
 
 ## Learning Competencies
 
+* Incorporate third-party gems into a web application using bundler
+* Extend the Sinatra application environment with a ruby gem
+* Implement user login and authentication in a web application
+* Use a third-party API
+* Implement OAuth
+* Deploy a web application on a hosting server (like Heroku)
+
 ## Summary
 
 Building on [Tweet Now! 1: Single User][Tweet Now! 1: Single User Challenge], let's add support for logging in with Twitter.  This will be our first application that uses OAuth for authentication.

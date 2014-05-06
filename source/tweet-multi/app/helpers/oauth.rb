@@ -1,8 +1,8 @@
 def oauth_consumer
-  raise RuntimeError, "You must set TWITTER_KEY and TWITTER_SECRET in your server environment." unless ENV['TWITTER_KEY'] and ENV['TWITTER_SECRET']
+  raise RuntimeError, "You must set CONSUMER_KEY and CONSUMER_SECRET in your server environment." unless ENV['CONSUMER_KEY'] && ENV['CONSUMER_SECRET']
   @consumer ||= OAuth::Consumer.new(
-    ENV['TWITTER_KEY'],
-    ENV['TWITTER_SECRET'],
+    ENV['CONSUMER_KEY'],
+    ENV['CONSUMER_SECRET'],
     :site => "https://api.twitter.com"
   )
 end

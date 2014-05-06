@@ -28,13 +28,13 @@ Create an application that allows a user to sign in via OAuth from Twitter and t
 
 Your Twitter "consumer key" and "consumer secret" answer the question, "What application is doing the acting?"
 
-The application skeleton we've provided expects you to have `TWITTER_KEY` and `TWITTER_SECRET` environment variables defined for your running server. This is so that we can deploy things securely to Heroku later.
+The application skeleton we've provided expects you to have `CONSUMER_KEY` and `CONSUMER_SECRET` environment variables defined for your running server. This is so that we can deploy things securely to Heroku later.
 
 Since these keys are associated with *your account* on Twitter, *they should be kept secret*. That is, don't include them directly in your `environment.rb` file. Instead, you should set `export` the environment variables before you run the server:
 
 ```bash
-$ export TWITTER_KEY=<your_twitter_consumer_key>
-$ export TWITTER_SECRET=<your_twitter_consumer_secret>
+$ export CONSUMER_KEY=<your_twitter_consumer_key>
+$ export CONSUMER_SECRET=<your_twitter_consumer_secret>
 $ shotgun
 ```
 
@@ -92,10 +92,10 @@ Now that you have an authenticated user who has authorized you to use Twitter on
 
 We don't want our confidential information (like application keys and secrets) to be stored in git, especially if we're going to push this to a public repository. If we *were* to store them in a public repository, anyone would be able to pretend to be our application. **NOT good.**
 
-Configuring the `TWITTER_KEY` and `TWITTER_SECRET` environment variables on our local machine was easy. [On Heroku, it's slighly more complicated][Heroku Configuration Variables Documentation]:
+Configuring the `CONSUMER_KEY` and `CONSUMER_SECRET` environment variables on our local machine was easy. [On Heroku, it's slighly more complicated][Heroku Configuration Variables Documentation]:
 
 ```bash
-$ heroku config:add TWITTER_KEY=<your_twitter_consumer_key> TWITTER_SECRET=<your_twitter_consumer_secret>
+$ heroku config:add CONSUMER_KEY=<your_twitter_consumer_key> CONSUMER_SECRET=<your_twitter_consumer_secret>
 ```
 
 After that, you should be able to deploy! :)
@@ -121,8 +121,6 @@ It's almost a guarantee that you'll be working with OAuth at some point in your 
 * [Heroku Configuration Variables Documentation][]
 * [Tweet Now! 1: Single User Challenge][]
 * [Oh My Auth! (Google) Challenge][]
-
-
 
 [OAuth v1]:http://oauth.net/core/1.0a/
 [Twitter OAuth Documentation]:https://dev.twitter.com/docs/auth/oauth

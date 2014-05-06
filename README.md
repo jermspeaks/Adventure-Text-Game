@@ -129,5 +129,5 @@ It's almost a guarantee that you'll be working with OAuth at some point in your 
 [OAuth Twitter Callback Configuration Discussion]:https://dev.twitter.com/discussions/5749
 [Heroku Configuration Variables Documentation]:https://devcenter.heroku.com/articles/config-vars
 [OAuth v1 Conversation Diagram]:https://docs.google.com/drawings/d/1E0SMvb5_vL6aqLD3sngHzC1Kn_K_N_P11ooauSf2FKQ/pub?w=960&h=720
-[Tweet Now! 1: Single User Challenge]:https://github.com/Devbootcamp/tweet-now-1-single-user-challenge
-[Oh My Auth! (Google) Challenge]:https://github.com/Devbootcamp/oh-my-auth-google-challenge
+[Tweet Now! 1: Single User Challenge]:../../../tweet-now-1-single-user-challenge
+[Oh My Auth! (Google) Challenge]:../../../oh-my-auth-google-challenge

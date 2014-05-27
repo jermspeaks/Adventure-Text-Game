@@ -18,7 +18,9 @@
       </p>
     </div>
   <% else %>
-    <button><a href="/sign_in">Sign In with Twitter</a></button>
+    <form action="/sign_in" method="get">
+      <input type="submit" value="Sign In with Twitter" />
+    </form>
   <% end %>
 
 </div>

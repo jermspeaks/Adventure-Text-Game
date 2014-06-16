@@ -13,7 +13,7 @@
 
 Building on [Tweet Now! 1: Single User][Tweet Now! 1: Single User Challenge], let's add support for logging in with Twitter.  This will be our first application that uses OAuth for authentication.
 
-Twitter uses [OAuth version 1][OAuth v1] for API authorization. OAuth (and particularly, OAuth version 1) is hard. As such, in the `/source` directory, you'll find that we've provided a skeleton for you that handles the nasty OAuth bits. Later, if you are feeling adventurous, you can try to code-up your own OAuth conversation.
+Twitter uses [OAuth version 1][OAuth v1] for API authorization. OAuth (and particularly, OAuth version 1) is hard. As such, you'll find that we've provided a skeleton for you that handles the nasty OAuth bits. Later, if you are feeling adventurous, you can try to code-up your own OAuth conversation.
 
 
 ## Releases

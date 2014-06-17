@@ -8,9 +8,6 @@ gem 'pg'
 gem 'sinatra'
 gem 'sinatra-contrib'
 
-# Use Thin for our web server
-gem 'thin'
-
 gem 'activesupport', '~>4.1'
 gem 'activerecord', '~>4.1'
 
@@ -30,4 +27,9 @@ group :test, :development do
   gem 'rspec'
   gem 'factory_girl'
   gem 'faker'
+end
+
+group :production do
+  # Use Thin for our web server
+  gem 'thin'
 end

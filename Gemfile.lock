@@ -23,8 +23,6 @@ GEM
     diff-lcs (1.2.5)
     equalizer (0.0.9)
     eventmachine (1.0.3)
-    factory_girl (4.4.0)
-      activesupport (>= 3.0.0)
     faker (1.3.0)
       i18n (~> 0.5)
     faraday (0.9.0)
@@ -36,10 +34,13 @@ GEM
     json (1.8.1)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
+    mini_portile (0.6.0)
     minitest (5.3.4)
     multi_json (1.10.1)
     multipart-post (2.0.0)
     naught (1.0.0)
+    nokogiri (1.6.2.1)
+      mini_portile (= 0.6.0)
     oauth (0.4.7)
     pg (0.17.1)
     rack (1.5.2)
@@ -56,10 +57,6 @@ GEM
     rspec-expectations (2.14.5)
       diff-lcs (>= 1.1.3, < 2.0)
     rspec-mocks (2.14.6)
-    shotgun (0.9)
-      rack (>= 1.0)
-    shoulda-matchers (2.6.1)
-      activesupport (>= 3.0.0)
     simple_oauth (0.2.0)
     sinatra (1.4.5)
       rack (~> 1.4)
@@ -76,9 +73,9 @@ GEM
       daemons (>= 1.0.9)
       eventmachine (>= 1.0.0)
       rack (>= 1.0.0)
-    thread_safe (0.3.3)
+    thread_safe (0.3.4)
     tilt (1.4.1)
-    twitter (5.9.0)
+    twitter (5.11.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
       equalizer (~> 0.0.9)
@@ -89,7 +86,7 @@ GEM
       memoizable (~> 0.4.0)
       naught (~> 1.0)
       simple_oauth (~> 0.2.0)
-    tzinfo (1.1.0)
+    tzinfo (1.2.0)
       thread_safe (~> 0.1)
 
 PLATFORMS
@@ -98,15 +95,13 @@ PLATFORMS
 DEPENDENCIES
   activerecord (~> 4.1)
   activesupport (~> 4.1)
-  factory_girl
   faker
+  nokogiri (~> 1.6.1)
   oauth
   pg
   rack-test
   rake
   rspec
-  shotgun
-  shoulda-matchers
   sinatra
   sinatra-contrib
   thin

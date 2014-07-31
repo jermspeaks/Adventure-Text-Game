@@ -19,6 +19,7 @@ gem 'rake'
 gem 'oauth'
 gem 'twitter'
 gem 'pry'
+gem 'json'
 
 group :test do
   gem 'rack-test'
